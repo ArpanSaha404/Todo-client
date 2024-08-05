@@ -6,9 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import Update from './Update';
 import axios from 'axios';
 
-let id = sessionStorage.getItem("id");
 let toUpdateArray = [];
 const Todo = () => {
+
+    let id = sessionStorage.getItem("id");
+    
     const [Inputs, setInputs] = useState({title:"", body:""});
     const [Array, setArray] = useState([]);
 
