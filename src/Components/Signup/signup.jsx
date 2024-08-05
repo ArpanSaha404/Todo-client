@@ -20,7 +20,7 @@ const Signup = () => {
 
     const submit = async (e) => {
         e.preventDefault();
-        await axios.post(`https://todo-api-henna.vercel.app/api/v1/register` , Inputs).then((response) => {
+        await axios.post(`https://todo-api-six-zeta.vercel.app/api/v1/register` , Inputs).then((response) => {
             console.log(response.data.message);
             if(response.data.message === "User already Exists...")
             {

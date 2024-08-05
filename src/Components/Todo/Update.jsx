@@ -24,7 +24,7 @@ const Update = ({display , update}) => {
 
   const submit = async () => {
     await axios
-      .put(`https://todo-api-henna.vercel.app/api/v1/updateTask/${update._id}`, Inputs)
+      .put(`https://todo-api-six-zeta.vercel.app/api/v1/updateTask/${update._id}`, Inputs)
       .then((response) => {
         toast.success("Task is Updated Successfully...");
       });

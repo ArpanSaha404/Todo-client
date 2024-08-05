@@ -23,7 +23,7 @@ const Login = () => {
     const submit = async (e) => {
         e.preventDefault();
         await axios
-            .post(`https://todo-api-henna.vercel.app/api/v1/login` , Inputs)
+            .post(`https://todo-api-six-zeta.vercel.app/api/v1/login` , Inputs)
             .then((response) => {
                 sessionStorage.setItem("id",response.data.others._id);
                 dispatch(authActions.login());

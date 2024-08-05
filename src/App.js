@@ -11,7 +11,6 @@ import Login from "./Components/Signup/Login";
 import About from "./Components/about/about";
 import Todo from "./Components/Todo/Todo";
 
-
 const App = () => {
 
   const dispatch = useDispatch();

@@ -42,7 +42,7 @@ const Todo = () => {
             if(id)
             {
                 await axios
-                    .post(`https://todo-api-henna.vercel.app/api/v1/addTask` , {title: Inputs.title , body: Inputs.body , id: id})
+                    .post(`https://todo-api-six-zeta.vercel.app/api/v1/addTask` , {title: Inputs.title , body: Inputs.body , id: id})
                     .then((response) => {
                         console.log(response);
                     });
@@ -66,7 +66,7 @@ const Todo = () => {
         if(id)
         {
             await axios
-            .delete(`https://todo-api-henna.vercel.app/api/v1/deleteTask/${cardid}`, {data:{id:id}})
+            .delete(`https://todo-api-six-zeta.vercel.app/api/v1/deleteTask/${cardid}`, {data:{id:id}})
             .then(() => {
                 toast.success("Task Deleted Sccessfully...");
             });
@@ -86,7 +86,7 @@ const Todo = () => {
         {
             const fetch = async () => {
                 await axios
-                    .get(`https://todo-api-henna.vercel.app/api/v1/getTasks/${id}`)
+                    .get(`https://todo-api-six-zeta.vercel.app/api/v1/getTasks/${id}`)
                     .then((response) => {
                         setArray(response.data.list);
                     });
